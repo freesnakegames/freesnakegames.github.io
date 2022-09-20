@@ -1,1 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link media="all" href="css/autoptimize.css" rel="stylesheet" />
+    <title>Snake games - Play Snake games on Games235 for free</title>
+    <script type='text/javascript' src='js/jquery.js' id='jquery-core-js'></script>
+    <script type="text/javascript" src="js/control.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
 
+<body>
+    <div id="page" class="site">
+        <header id="masthead" class="site-header navbar-static-top fixed-top navbar-light" role="banner">
+            <div style="display: flex;">
+                <div style="display: flex; flex: 1;">
+                    <div class="floating-navbar-brand">
+                        <ul class="logo-menu">
+                            <li class="nav-item "> 
+                                <a href="//www.games235.com" class="logo-link" > 
+                                    <img src="images/logoweb.png" class="logo-img dropdown-toggle" title="Games235" alt="Games235">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div id="main-nav" class="navbar-padding">
+                            <ul id="menu-main-menu-en-us" class="navbar-nav">
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17900 nav-item"><a title=".io" href="//io.games235.com" class="nav-link">.io</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-35733 current_page_item active nav-item"><a title="Snake" href="//snake.games235.com" class="nav-link">Snake</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Dinosaur" href="//dinosaur.games235.com" class="nav-link">Dinosaur</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Car" href="//car.games235.com" class="nav-link">Car</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Dress Up" href="//dressup.games235.com" class="nav-link">Dress Up</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="2 Players" href="//2players.games235.com" class="nav-link">2 Players</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Arcade" href="//arcade.games235.com" class="nav-link">Arcade</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Shooting" href="//shooting.games235.com" class="nav-link">Shooting</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Driving" href="//driving.games235.com" class="nav-link">Driving</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Action" href="//action.games235.com" class="nav-link">Action</a></li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Puzzle" href="//puzzle.games235.com" class="nav-link">Puzzle</a></li>
+
+                            </ul>
+                        </div> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".mobile-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    </div>
+                </div>
+
+                <div class="provider-hint"></div>
+            </div>
+            <div class="mobile-nav collapse navbar-collapse">
+                <div id="mobile-nav" class="navbar-padding">
+                    <ul id="menu-main-menu-en-us-1" class="mobile-navbar-nav">
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17900 nav-item"><a title=".io" href="//io.games235.com" class="nav-link">.io</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-35733 current_page_item active nav-item"><a title="Snake" href="//snake.games235.com" class="nav-link">Snake</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Dinosaur" href="//dinosaur.games235.com" class="nav-link">Dinosaur</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Car" href="//car.games235.com" class="nav-link">Car</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Dress Up" href="//dressup.games235.com" class="nav-link">Dress Up</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="2 Players" href="//2players.games235.com" class="nav-link">2 Players</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Arcade" href="//arcade.games235.com" class="nav-link">Arcade</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Shooting" href="//shooting.games235.com" class="nav-link">Shooting</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Driving" href="//driving.games235.com" class="nav-link">Driving</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Action" href="//action.games235.com" class="nav-link">Action</a></li>
+                        <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Puzzle" href="//puzzle.games235.com" class="nav-link">Puzzle</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="content" class="site-content">
+            <div class="container">
+                <div class="row">
+                    <section id="primary" class="content-area">
+                        <main id="main" class="site-main" role="main" style="padding-top: 15px;">
+                            <div class="category-content" data-category-id="53">
+                                <article id="post-35733" class="post-35733 page type-page status-publish hentry">
+                                    <header class="entry-header">
+                                        <h1 class="entry-title category-headline">Snake games</h1>
+                                    </header>
+                                    <div class="entry-content">
+                                        <div id="first-content-below" class="content-below-category">
+                                            <div class="container-fluid">
+                                                <div class="grid grid-flex">
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/little-big-snake/">
+                                                                <div class="game-video" data-video="video/1792_6064352397a16.mp4" data-poster="images/188x188/1792_5eb12c6fe8d68.jpg"></div><img src="images/164x164/1792_5eb12c6fe8d68.jpg" alt="Little Big Snake" title="Little Big Snake" srcset="images/164x164/1792_5eb12c6fe8d68.jpg 1x, images/328x328/1792_5eb12c6fe8d68.jpg 2x" alt="Little Big Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Little Big Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snowball-io/">
+                                                                <div class="game-video" data-video="video/9288_605dfaf4f280b.mp4" data-poster="images/188x188/9288_5eb3ef18092bd.jpg"></div><img src="images/164x164/9288_5eb3ef18092bd.jpg" alt="Snowball.io" title="Snowball.io" srcset="images/164x164/9288_5eb3ef18092bd.jpg 1x, images/328x328/9288_5eb3ef18092bd.jpg 2x" alt="Snowball.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snowball.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/worms-zone/">
+                                                                <div class="game-video" data-video="video/1798_605dfb5c7ab41.mp4" data-poster="images/188x188/1798_5eb1299322aa5.jpg"></div><img src="images/164x164/1798_5eb1299322aa5.jpg" alt="Worms Zone" title="Worms Zone" srcset="images/164x164/1798_5eb1299322aa5.jpg 1x, images/328x328/1798_5eb1299322aa5.jpg 2x" alt="Worms Zone" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Worms Zone</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/agar-io/">
+                                                                <div class="game-video" data-video="video/1253_60424f2c19bfc.mp4" data-poster="images/188x188/1253_5ea9a1be4ec62.jpg"></div><img src="images/164x164/1253_5ea9a1be4ec62.jpg" alt="Agar.io" title="Agar.io" srcset="images/164x164/1253_5ea9a1be4ec62.jpg 1x, images/328x328/1253_5ea9a1be4ec62.jpg 2x" alt="Agar.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Agar.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/wormate-io/">
+                                                                <div class="game-video" data-video="video/1804_607d496d10439.mp4" data-poster="images/188x188/1804_5eb2c8e4efa2e.jpg"></div><img src="images/164x164/1804_5eb2c8e4efa2e.jpg" alt="Wormate.io" title="Wormate.io" srcset="images/164x164/1804_5eb2c8e4efa2e.jpg 1x, images/328x328/1804_5eb2c8e4efa2e.jpg 2x" alt="Wormate.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Wormate.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/curve-fever-pro/">
+                                                                <div class="game-video" data-video="video/6388_605df8bc51621.mp4" data-poster="images/188x188/6388_5eb3e86cd81b4.jpg"></div><img src="images/164x164/6388_5eb3e86cd81b4.jpg" alt="Curve Fever Pro" title="Curve Fever Pro" srcset="images/164x164/6388_5eb3e86cd81b4.jpg 1x, images/328x328/6388_5eb3e86cd81b4.jpg 2x" alt="Curve Fever Pro" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Curve Fever Pro</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/wormo-io/">
+                                                                <div class="game-video" data-video="video/9627_607d4fd904f4e.mp4" data-poster="images/188x188/9627_5eb3efb709c8d.jpg"></div><img src="images/164x164/9627_5eb3efb709c8d.jpg" alt="Wormo.io" title="Wormo.io" srcset="images/164x164/9627_5eb3efb709c8d.jpg 1x, images/328x328/9627_5eb3efb709c8d.jpg 2x" alt="Wormo.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Wormo.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/superhero-io/"><img src="images/164x164/1803_5eb2c5f4131d4.jpg" alt="Superhero.io" title="Superhero.io" srcset="images/164x164/1803_5eb2c5f4131d4.jpg 1x, images/328x328/1803_5eb2c5f4131d4.jpg 2x" alt="Superhero.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Superhero.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-vs-blocks/"><img src="images/164x164/12059_5eb3f3e6080a1.jpg" alt="Snake VS Blocks" title="Snake VS Blocks" srcset="images/164x164/12059_5eb3f3e6080a1.jpg 1x, images/328x328/12059_5eb3f3e6080a1.jpg 2x" alt="Snake VS Blocks" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake VS Blocks</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/slither-io/">
+                                                                <div class="game-video" data-video="video/1254_604253ff2f171.mp4" data-poster="images/188x188/1254_5eabcbc91810d.jpg"></div><img src="images/164x164/1254_5eabcbc91810d.jpg" alt="Slither.io" title="Slither.io" srcset="images/164x164/1254_5eabcbc91810d.jpg 1x, images/328x328/1254_5eabcbc91810d.jpg 2x" alt="Slither.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Slither.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/color-snake/"><img src="images/164x164/6477_5eb3e88ded030.jpg" alt="Color Snake" title="Color Snake" srcset="images/164x164/6477_5eb3e88ded030.jpg 1x, images/328x328/6477_5eb3e88ded030.jpg 2x" alt="Color Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Color Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/cool-snakes/">
+                                                                <div class="game-video" data-video="video/4034_61bc5ca549284.mp4" data-poster="images/188x188/4034_5eb3e454b2a85.jpg"></div><img src="images/164x164/4034_5eb3e454b2a85.jpg" alt="Cool Snakes" title="Cool Snakes" srcset="images/164x164/4034_5eb3e454b2a85.jpg 1x, images/328x328/4034_5eb3e454b2a85.jpg 2x" alt="Cool Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Cool Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/happy-snakes/">
+                                                                <div class="game-video" data-video="video/9833_61289b6582327.mp4" data-poster="images/188x188/9833_5eb3f02912788.jpg"></div><img src="images/164x164/9833_5eb3f02912788.jpg" alt="Happy Snakes" title="Happy Snakes" srcset="images/164x164/9833_5eb3f02912788.jpg 1x, images/328x328/9833_5eb3f02912788.jpg 2x" alt="Happy Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Happy Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/3d-snake/"><img src="images/164x164/7241_5eb3eba580deb.jpg" alt="3D SNAKE" title="3D SNAKE" srcset="images/164x164/7241_5eb3eba580deb.jpg 1x, images/328x328/7241_5eb3eba580deb.jpg 2x" alt="3D SNAKE" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">3D SNAKE</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/angry-snakes/"><img src="images/164x164/12088_5eb3f3f897167.jpg" alt="Angry Snakes" title="Angry Snakes" srcset="images/164x164/12088_5eb3f3f897167.jpg 1x, images/328x328/12088_5eb3f3f897167.jpg 2x" alt="Angry Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Angry Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/tornado-io/">
+                                                                <div class="game-video" data-video="video/7243_6128b2a5cc3ae.mp4" data-poster="images/188x188/7243_5eb3eba5dbee3.jpg"></div><img src="images/164x164/7243_5eb3eba5dbee3.jpg" alt="Tornado.io" title="Tornado.io" srcset="images/164x164/7243_5eb3eba5dbee3.jpg 1x, images/328x328/7243_5eb3eba5dbee3.jpg 2x" alt="Tornado.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Tornado.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/superspin-io/"><img src="images/164x164/9629_5eb3efb75a7e9.jpg" alt="Superspin.io" title="Superspin.io" srcset="images/164x164/9629_5eb3efb75a7e9.jpg 1x, images/328x328/9629_5eb3efb75a7e9.jpg 2x" alt="Superspin.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Superspin.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/crazy-snakes/"><img src="images/164x164/7609_5eb3ec49ac59f.jpg" alt="Crazy Snakes" title="Crazy Snakes" srcset="images/164x164/7609_5eb3ec49ac59f.jpg 1x, images/328x328/7609_5eb3ec49ac59f.jpg 2x" alt="Crazy Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Crazy Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/train-snake/"><img src="images/164x164/1799_5eb1286a32a1f.jpg" alt="Train Snake" title="Train Snake" srcset="images/164x164/1799_5eb1286a32a1f.jpg 1x, images/328x328/1799_5eb1286a32a1f.jpg 2x" alt="Train Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Train Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/blocky-snake/"><img src="images/164x164/4758_5eb3e581e7f19.jpg" alt="Blocky Snake" title="Blocky Snake" srcset="images/164x164/4758_5eb3e581e7f19.jpg 1x, images/328x328/4758_5eb3e581e7f19.jpg 2x" alt="Blocky Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Blocky Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/cleanup-io/">
+                                                                <div class="game-video" data-video="video/7256_61bc5c854e2d6.mp4" data-poster="images/188x188/7256_5eb3eba882937.jpg"></div><img src="images/164x164/7256_5eb3eba882937.jpg" alt="CleanUp.IO" title="CleanUp.IO" srcset="images/164x164/7256_5eb3eba882937.jpg 1x, images/328x328/7256_5eb3eba882937.jpg 2x" alt="CleanUp.IO" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">CleanUp.IO</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/paint-io-teams/">
+                                                                <div class="game-video" data-video="video/5432_6128adde26037.mp4" data-poster="images/188x188/5432_5eb3e68fc5388.jpg"></div><img src="images/164x164/5432_5eb3e68fc5388.jpg" alt="Paint.IO Teams" title="Paint.IO Teams" srcset="images/164x164/5432_5eb3e68fc5388.jpg 1x, images/328x328/5432_5eb3e68fc5388.jpg 2x" alt="Paint.IO Teams" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Paint.IO Teams</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-battle/">
+                                                                <div class="game-video" data-video="video/9655_61bc65d1ddb4c.mp4" data-poster="images/188x188/9655_5eb3efbc28cc4.jpg"></div><img src="images/164x164/9655_5eb3efbc28cc4.jpg" alt="Snake Battle" title="Snake Battle" srcset="images/164x164/9655_5eb3efbc28cc4.jpg 1x, images/328x328/9655_5eb3efbc28cc4.jpg 2x" alt="Snake Battle" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Battle</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/axe-io/"><img src="images/164x164/5619_5eb3e6fd1f607.jpg" alt="AXE.IO" title="AXE.IO" srcset="images/164x164/5619_5eb3e6fd1f607.jpg 1x, images/328x328/5619_5eb3e6fd1f607.jpg 2x" alt="AXE.IO" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">AXE.IO</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/rolling-city/"><img src="images/164x164/7663_5eb3ec65c9111.jpg" alt="Rolling City" title="Rolling City" srcset="images/164x164/7663_5eb3ec65c9111.jpg 1x, images/328x328/7663_5eb3ec65c9111.jpg 2x" alt="Rolling City" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Rolling City</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/emoji-snakes/"><img src="images/164x164/9982_5eb3f053a9b2c.jpg" alt="Emoji Snakes" title="Emoji Snakes" srcset="images/164x164/9982_5eb3f053a9b2c.jpg 1x, images/328x328/9982_5eb3f053a9b2c.jpg 2x" alt="Emoji Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Emoji Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snakez/">
+                                                                <div class="game-video" data-video="video/2812_61bc65e4996f3.mp4" data-poster="images/188x188/2812_5eb3e24bc3f20.jpg"></div><img src="images/164x164/2812_5eb3e24bc3f20.jpg" alt="SnakeZ" title="SnakeZ" srcset="images/164x164/2812_5eb3e24bc3f20.jpg 1x, images/328x328/2812_5eb3e24bc3f20.jpg 2x" alt="SnakeZ" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">SnakeZ</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/goosegame-io/">
+                                                                <div class="game-video" data-video="video/3769_61bc5ee062471.mp4" data-poster="images/188x188/3769_5eb3e3f5c3718.jpg"></div><img src="images/164x164/3769_5eb3e3f5c3718.jpg" alt="GooseGame.io" title="GooseGame.io" srcset="images/164x164/3769_5eb3e3f5c3718.jpg 1x, images/328x328/3769_5eb3e3f5c3718.jpg 2x" alt="GooseGame.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">GooseGame.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/perfect-hit/"><img src="images/164x164/8718_5eb3ee3483ac7.jpg" alt="Perfect Hit" title="Perfect Hit" srcset="images/164x164/8718_5eb3ee3483ac7.jpg 1x, images/328x328/8718_5eb3ee3483ac7.jpg 2x" alt="Perfect Hit" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Perfect Hit</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/paper-snakes/"><img src="images/164x164/9239_5eb3ef0e5a66f.jpg" alt="Paper Snakes" title="Paper Snakes" srcset="images/164x164/9239_5eb3ef0e5a66f.jpg 1x, images/328x328/9239_5eb3ef0e5a66f.jpg 2x" alt="Paper Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Paper Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/slither-birds/"><img src="images/164x164/11906_5eb3f3aee6f4f.jpg" alt="Slither Birds" title="Slither Birds" srcset="images/164x164/11906_5eb3f3aee6f4f.jpg 1x, images/328x328/11906_5eb3f3aee6f4f.jpg 2x" alt="Slither Birds" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Slither Birds</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/speedy-snake/"><img src="images/164x164/4205_5eb3e4ac76b22.jpg" alt="Speedy Snake" title="Speedy Snake" srcset="images/164x164/4205_5eb3e4ac76b22.jpg 1x, images/328x328/4205_5eb3e4ac76b22.jpg 2x" alt="Speedy Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Speedy Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/gulper-io/"><img src="images/164x164/18824_6050883dc3984.jpg" alt="gulper.io" title="gulper.io" srcset="images/164x164/18824_6050883dc3984.jpg 1x, images/328x328/18824_6050883dc3984.jpg 2x" alt="gulper.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">gulper.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-condo-2/"><img src="images/164x164/1624_5ea856f85672c.jpg" alt="Snake Condo 2" title="Snake Condo 2" srcset="images/164x164/1624_5ea856f85672c.jpg 1x, images/328x328/1624_5ea856f85672c.jpg 2x" alt="Snake Condo 2" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Condo 2</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/fruit-snake/"><img src="images/164x164/9498_5eb3ef8db99c9.jpg" alt="Fruit Snake" title="Fruit Snake" srcset="images/164x164/9498_5eb3ef8db99c9.jpg 1x, images/328x328/9498_5eb3ef8db99c9.jpg 2x" alt="Fruit Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Fruit Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/slithercraft-io/"><img src="images/164x164/19001_605088693cb60.jpg" alt="SlitherCraft.io" title="SlitherCraft.io" srcset="images/164x164/19001_605088693cb60.jpg 1x, images/328x328/19001_605088693cb60.jpg 2x" alt="SlitherCraft.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">SlitherCraft.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-condo/"><img src="images/164x164/1736_5ea8576dbf59e.jpg" alt="Snake Condo" title="Snake Condo" srcset="images/164x164/1736_5ea8576dbf59e.jpg 1x, images/328x328/1736_5ea8576dbf59e.jpg 2x" alt="Snake Condo" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Condo</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-worm/"><img src="images/164x164/4883_5eb3e5acf267e.jpg" alt="Snake Worm" title="Snake Worm" srcset="images/164x164/4883_5eb3e5acf267e.jpg 1x, images/328x328/4883_5eb3e5acf267e.jpg 2x" alt="Snake Worm" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Worm</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/santa-snakes/">
+                                                                <div class="game-video" data-video="video/9533_61bc65a0b8f2f.mp4" data-poster="images/188x188/9533_5eb3ef95329a0.jpg"></div><img src="images/164x164/9533_5eb3ef95329a0.jpg" alt="Santa Snakes" title="Santa Snakes" srcset="images/164x164/9533_5eb3ef95329a0.jpg 1x, images/328x328/9533_5eb3ef95329a0.jpg 2x" alt="Santa Snakes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Santa Snakes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/bb-tin/"><img src="images/164x164/12145_5eb3f40367760.jpg" alt="BB TIN" title="BB TIN" srcset="images/164x164/12145_5eb3f40367760.jpg 1x, images/328x328/12145_5eb3f40367760.jpg 2x" alt="BB TIN" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">BB TIN</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake/"><img src="images/164x164/1788_5eaa94947045f.jpg" alt="Snake" title="Snake" srcset="images/164x164/1788_5eaa94947045f.jpg 1x, images/328x328/1788_5eaa94947045f.jpg 2x" alt="Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-color/"><img src="images/164x164/5205_5eb3e63aaed7b.jpg" alt="Snake Color" title="Snake Color" srcset="images/164x164/5205_5eb3e63aaed7b.jpg 1x, images/328x328/5205_5eb3e63aaed7b.jpg 2x" alt="Snake Color" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Color</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-blast-2/"><img src="images/164x164/12220_5eb3f41e1c543.jpg" alt="Snake Blast 2" title="Snake Blast 2" srcset="images/164x164/12220_5eb3f41e1c543.jpg 1x, images/328x328/12220_5eb3f41e1c543.jpg 2x" alt="Snake Blast 2" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Blast 2</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/red-rope/"><img src="images/164x164/16283_6050860165ecf.jpg" alt="Red Rope" title="Red Rope" srcset="images/164x164/16283_6050860165ecf.jpg 1x, images/328x328/16283_6050860165ecf.jpg 2x" alt="Red Rope" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Red Rope</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/brickz/"><img src="images/164x164/12247_5eb3f422df95a.jpg" alt="BrickZ" title="BrickZ" srcset="images/164x164/12247_5eb3f422df95a.jpg 1x, images/328x328/12247_5eb3f422df95a.jpg 2x" alt="BrickZ" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">BrickZ</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/python-io/"><img src="images/164x164/16465_6050862bae9f3.jpg" alt="python.io" title="python.io" srcset="images/164x164/16465_6050862bae9f3.jpg 1x, images/328x328/16465_6050862bae9f3.jpg 2x" alt="python.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">python.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snaker-io/"><img src="images/164x164/19298_605088b2014af.jpg" alt="Snaker.io" title="Snaker.io" srcset="images/164x164/19298_605088b2014af.jpg 1x, images/328x328/19298_605088b2014af.jpg 2x" alt="Snaker.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snaker.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/vegetable-snake/"><img src="images/164x164/17272_605086de8d4a7.jpg" alt="Vegetable Snake" title="Vegetable Snake" srcset="images/164x164/17272_605086de8d4a7.jpg 1x, images/328x328/17272_605086de8d4a7.jpg 2x" alt="Vegetable Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Vegetable Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/worms-io-multiplayer/"><img src="images/164x164/7649_5eb3ec5165488.jpg" alt="Worms.io Multiplayer" title="Worms.io Multiplayer" srcset="images/164x164/7649_5eb3ec5165488.jpg 1x, images/328x328/7649_5eb3ec5165488.jpg 2x" alt="Worms.io Multiplayer" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Worms.io Multiplayer</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/cute-snake-io/"><img src="images/164x164/13921_605083d368c1e.jpg" alt="Cute Snake io" title="Cute Snake io" srcset="images/164x164/13921_605083d368c1e.jpg 1x, images/328x328/13921_605083d368c1e.jpg 2x" alt="Cute Snake io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Cute Snake io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/zigzag-snake/"><img src="images/164x164/17424_6050870009cbf.jpg" alt="ZigZag Snake" title="ZigZag Snake" srcset="images/164x164/17424_6050870009cbf.jpg 1x, images/328x328/17424_6050870009cbf.jpg 2x" alt="ZigZag Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">ZigZag Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/crazy-snake-io/"><img src="images/164x164/5725_5eb3e72b4d6e9.jpg" alt="Crazy Snake io" title="Crazy Snake io" srcset="images/164x164/5725_5eb3e72b4d6e9.jpg 1x, images/328x328/5725_5eb3e72b4d6e9.jpg 2x" alt="Crazy Snake io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Crazy Snake io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/smiley-io/"><img src="images/164x164/9932_5eb3f0492d107.jpg" alt="Smiley IO" title="Smiley IO" srcset="images/164x164/9932_5eb3f0492d107.jpg 1x, images/328x328/9932_5eb3f0492d107.jpg 2x" alt="Smiley IO" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Smiley IO</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-2048/"><img src="images/164x164/17770_6050874fc699e.jpg" alt="Snake 2048" title="Snake 2048" srcset="images/164x164/17770_6050874fc699e.jpg 1x, images/328x328/17770_6050874fc699e.jpg 2x" alt="Snake 2048" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake 2048</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/black-and-white-snake/"><img src="images/164x164/918_5ea045c2e36ed.jpg" alt="Black and white snake" title="Black and white snake" srcset="images/164x164/918_5ea045c2e36ed.jpg 1x, images/328x328/918_5ea045c2e36ed.jpg 2x" alt="Black and white snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Black and white snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-neon/"><img src="images/164x164/5923_5eb3e773c5f98.jpg" alt="Snake Neon" title="Snake Neon" srcset="images/164x164/5923_5eb3e773c5f98.jpg 1x, images/328x328/5923_5eb3e773c5f98.jpg 2x" alt="Snake Neon" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Neon</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-land/"><img src="images/164x164/7701_5eb3ec6dbb4e4.jpg" alt="Snake Land" title="Snake Land" srcset="images/164x164/7701_5eb3ec6dbb4e4.jpg 1x, images/328x328/7701_5eb3ec6dbb4e4.jpg 2x" alt="Snake Land" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Land</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-vs-colors/"><img src="images/164x164/9981_5eb3f0538752c.jpg" alt="Snake Vs Colors" title="Snake Vs Colors" srcset="images/164x164/9981_5eb3f0538752c.jpg 1x, images/328x328/9981_5eb3f0538752c.jpg 2x" alt="Snake Vs Colors" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Vs Colors</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/strange-snake/"><img src="images/164x164/2049_5eb3de2eb9488.jpg" alt="Strange Snake" title="Strange Snake" srcset="images/164x164/2049_5eb3de2eb9488.jpg 1x, images/328x328/2049_5eb3de2eb9488.jpg 2x" alt="Strange Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Strange Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/modern-snake/"><img src="images/164x164/7710_5eb3ec6f7c379.jpg" alt="Modern Snake" title="Modern Snake" srcset="images/164x164/7710_5eb3ec6f7c379.jpg 1x, images/328x328/7710_5eb3ec6f7c379.jpg 2x" alt="Modern Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Modern Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-io-game/"><img src="images/164x164/14188_60508412a42d7.jpg" alt="Snake IO Game" title="Snake IO Game" srcset="images/164x164/14188_60508412a42d7.jpg 1x, images/328x328/14188_60508412a42d7.jpg 2x" alt="Snake IO Game" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake IO Game</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-3310/"><img src="images/164x164/1203_5ea04921248ba.jpg" alt="Snake 3310" title="Snake 3310" srcset="images/164x164/1203_5ea04921248ba.jpg 1x, images/328x328/1203_5ea04921248ba.jpg 2x" alt="Snake 3310" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake 3310</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/basic-snake/"><img src="images/164x164/10471_5eb3f13028655.jpg" alt="Basic Snake" title="Basic Snake" srcset="images/164x164/10471_5eb3f13028655.jpg 1x, images/328x328/10471_5eb3f13028655.jpg 2x" alt="Basic Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Basic Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snaky-io/"><img src="images/164x164/14222_6050841aa7dc4.jpg" alt="Snaky.io" title="Snaky.io" srcset="images/164x164/14222_6050841aa7dc4.jpg 1x, images/328x328/14222_6050841aa7dc4.jpg 2x" alt="Snaky.io" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snaky.io</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/monkey-and-banana/"><img src="images/164x164/18132_6050879eb39e3.jpg" alt="Monkey And Banana" title="Monkey And Banana" srcset="images/164x164/18132_6050879eb39e3.jpg 1x, images/328x328/18132_6050879eb39e3.jpg 2x" alt="Monkey And Banana" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Monkey And Banana</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-escape/"><img src="images/164x164/1204_5ea04922478dc.jpg" alt="Snake Escape" title="Snake Escape" srcset="images/164x164/1204_5ea04922478dc.jpg 1x, images/328x328/1204_5ea04922478dc.jpg 2x" alt="Snake Escape" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Escape</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/fun-snake/"><img src="images/164x164/2880_5eb3e259e0ab3.jpg" alt="Fun Snake" title="Fun Snake" srcset="images/164x164/2880_5eb3e259e0ab3.jpg 1x, images/328x328/2880_5eb3e259e0ab3.jpg 2x" alt="Fun Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Fun Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/adam-and-eve-cut-the-ropes/"><img src="images/164x164/8139_5eb3ed4e9d013.jpg" alt="Adam and Eve: Cut the Ropes" title="Adam and Eve: Cut the Ropes" srcset="images/164x164/8139_5eb3ed4e9d013.jpg 1x, images/328x328/8139_5eb3ed4e9d013.jpg 2x" alt="Adam and Eve: Cut the Ropes" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Adam and Eve: Cut the Ropes</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-blast/"><img src="images/164x164/10788_5eb3f1b872369.jpg" alt="Snake Blast" title="Snake Blast" srcset="images/164x164/10788_5eb3f1b872369.jpg 1x, images/328x328/10788_5eb3f1b872369.jpg 2x" alt="Snake Blast" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Blast</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-vs-balls/"><img src="images/164x164/14329_605084381224f.jpg" alt="Snake vs Balls" title="Snake vs Balls" srcset="images/164x164/14329_605084381224f.jpg 1x, images/328x328/14329_605084381224f.jpg 2x" alt="Snake vs Balls" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake vs Balls</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-fruit/"><img src="images/164x164/18190_605087aab8b87.jpg" alt="Snake Fruit" title="Snake Fruit" srcset="images/164x164/18190_605087aab8b87.jpg 1x, images/328x328/18190_605087aab8b87.jpg 2x" alt="Snake Fruit" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Fruit</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-and-ladders-game/"><img src="images/164x164/3046_5eb3e297ce3de.jpg" alt="Snake and Ladders Game" title="Snake and Ladders Game" srcset="images/164x164/3046_5eb3e297ce3de.jpg 1x, images/328x328/3046_5eb3e297ce3de.jpg 2x" alt="Snake and Ladders Game" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake and Ladders Game</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/in-bloom/"><img src="images/164x164/11004_5eb3f21b2b06b.jpg" alt="In Bloom" title="In Bloom" srcset="images/164x164/11004_5eb3f21b2b06b.jpg 1x, images/328x328/11004_5eb3f21b2b06b.jpg 2x" alt="In Bloom" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">In Bloom</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-egg-eater/"><img src="images/164x164/3363_5eb3e30378424.jpg" alt="Snake Egg Eater" title="Snake Egg Eater" srcset="images/164x164/3363_5eb3e30378424.jpg 1x, images/328x328/3363_5eb3e30378424.jpg 2x" alt="Snake Egg Eater" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Egg Eater</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/la-shark/"><img src="images/164x164/6407_5eb3e870c38e8.jpg" alt="LA Shark" title="LA Shark" srcset="images/164x164/6407_5eb3e870c38e8.jpg 1x, images/328x328/6407_5eb3e870c38e8.jpg 2x" alt="LA Shark" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">LA Shark</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-mania/"><img src="images/164x164/11472_5eb3f2f1b97a8.jpg" alt="Snake Mania" title="Snake Mania" srcset="images/164x164/11472_5eb3f2f1b97a8.jpg 1x, images/328x328/11472_5eb3f2f1b97a8.jpg 2x" alt="Snake Mania" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Mania</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/snake-puzzle/"><img src="images/164x164/15110_605084ecc9360.jpg" alt="Snake Puzzle" title="Snake Puzzle" srcset="images/164x164/15110_605084ecc9360.jpg 1x, images/328x328/15110_605084ecc9360.jpg 2x" alt="Snake Puzzle" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Snake Puzzle</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/zzz-snake/"><img src="images/164x164/1340_5ea855b195778.jpg" alt="ZZZ Snake" title="ZZZ Snake" srcset="images/164x164/1340_5ea855b195778.jpg 1x, images/328x328/1340_5ea855b195778.jpg 2x" alt="ZZZ Snake" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">ZZZ Snake</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/shark-attack/">
+                                                                <div class="game-video" data-video="video/6753_6128b04b94a04.mp4" data-poster="images/188x188/6753_5eb3e90759213.jpg"></div><img src="images/164x164/6753_5eb3e90759213.jpg" alt="Shark Attack" title="Shark Attack" srcset="images/164x164/6753_5eb3e90759213.jpg 1x, images/328x328/6753_5eb3e90759213.jpg 2x" alt="Shark Attack" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Shark Attack</div>
+                                                            </a></div>
+                                                    </div>
+                                                    <div class="grid-item grid-item--width15">
+                                                        <div class="game game--width15"><a href="https://gameforge.com/en-US/littlegames/little-red-riding-hood/"><img src="images/164x164/15445_605085401605c.jpg" alt="Little Red Riding Hood" title="Little Red Riding Hood" srcset="images/164x164/15445_605085401605c.jpg 1x, images/328x328/15445_605085401605c.jpg 2x" alt="Little Red Riding Hood" loading="lazy">
+                                                                <div class="text" style="opacity: 1; z-index: 30">Little Red Riding Hood</div>
+                                                            </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="breadcrumbs" style="margin-top: 20px;">
+                                                <div id="breadcrumbs">
+                                                    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+                                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a itemprop="item" href="//www.games235.com/"><span itemprop="name">Games235</span></a>
+                                                            <meta itemprop="position" content="1" />
+                                                        </li>&nbsp;<svg style="margin: 4px 5px 15px 0;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 fa-null fa-rotate-null fa-pull-null " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                                            <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+                                                        </svg>
+                                                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a itemprop="item" href="//snake.games235.com/"><span itemprop="name">Snake games</span></a>
+                                                            <meta itemprop="position" content="2" />
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h2>Snake games free</h2>
+                                                <p>Play the best snake games for free. We have collected 80 popular snake games for you to play on Games235. They include new and top snake games such as Little Big Snake, Snowball.io, Worms Zone, Agar.io and Wormate.io. Choose a snake game from the list and you can play online on your mobile or computer for free.</p>
+                                            </div>
+                                            <div>
+                                                <!-- <script type="application/ld+json">
+                                                    {
+                                                        "@context": "https://schema.org",
+                                                        "@type": "FAQPage",
+                                                        "mainEntity": [{
+                                                                "@type": "Question",
+                                                                "name": "What are the most popular Snake games?",
+                                                                "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "<ol><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/little-big-snake\/\">Little Big Snake<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/snowball-io\/\">Snowball.io<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/worms-zone\/\">Worms Zone<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/agar-io\/\">Agar.io<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/wormate-io\/\">Wormate.io<\/a><\/li><\/ol>"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@type": "Question",
+                                                                "name": "Which Snake games can be played for free?",
+                                                                "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "<ol><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/little-big-snake\/\">Little Big Snake<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/snowball-io\/\">Snowball.io<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/worms-zone\/\">Worms Zone<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/agar-io\/\">Agar.io<\/a><\/li><li><a href=\"https:\/\/en-us.casual.gfseodev.com\/wormate-io\/\">Wormate.io<\/a><\/li><\/ol>"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                </script> -->
+                                                <h2>FAQ</h2>
+                                                <h3>What are the most popular Snake games?</h3>
+                                                <ol>
+                                                    <ol>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/little-big-snake/">Little Big Snake</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/snowball-io/">Snowball.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/worms-zone/">Worms Zone</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/agar-io/">Agar.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/wormate-io/">Wormate.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/curve-fever-pro/">Curve Fever Pro</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/wormo-io/">Wormo.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/superhero-io/">Superhero.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/snake-vs-blocks/">Snake VS Blocks</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/slither-io/">Slither.io</a></li>
+                                                    </ol>
+                                                </ol>
+                                                <h3>Which Snake games can be played for free?</h3>
+                                                <ol>
+                                                    <ol>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/little-big-snake/">Little Big Snake</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/snowball-io/">Snowball.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/worms-zone/">Worms Zone</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/agar-io/">Agar.io</a></li>
+                                                        <li><a href="https://gameforge.com/en-US/littlegames/wormate-io/">Wormate.io</a></li>
+                                                    </ol>
+                                                </ol>
+                                            </div>
+                                            <div>
+                                                <h2>Popular Tags</h2>
+                                                <ul class="category-tags">
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/bomberman-games/"><a href="https://gameforge.com/en-US/littlegames/bomberman-games/"><img src="images/94x94/93_5eaac10234ab0.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Bomberman</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/gold-digger-games/"><a href="https://gameforge.com/en-US/littlegames/gold-digger-games/"><img src="images/94x94/92_5eaac7556fdee.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Gold digger</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/bejeweled-games/"><a href="https://gameforge.com/en-US/littlegames/bejeweled-games/"><img src="images/94x94/66_5eaa9a3c76fa8.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Bejeweled</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/mahjong-games/"><a href="https://gameforge.com/en-US/littlegames/mahjong-games/"><img src="images/94x94/5_5eaaa36584563.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Mahjong</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/idle-games/"><a href="https://gameforge.com/en-US/littlegames/idle-games/"><img src="images/94x94/581_5f0c47a5acebd.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Idle</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/tetris-games/"><a href="https://gameforge.com/en-US/littlegames/tetris-games/"><img src="images/94x94/57_5eaa906fc8df7.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Tetris</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/bubbles-games/"><a href="https://gameforge.com/en-US/littlegames/bubbles-games/"><img src="images/94x94/56_5eaa986ddb977.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Bubbles</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/solitaire-games/"><a href="https://gameforge.com/en-US/littlegames/solitaire-games/"><img src="images/94x94/45_5eaa9f4440dac.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Solitaire</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/monkeys-games/"><a href="https://gameforge.com/en-US/littlegames/monkeys-games/"><img src="images/94x94/44_5ea99b0baea96.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Monkeys</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/dragon-games/"><a href="https://gameforge.com/en-US/littlegames/dragon-games/"><img src="images/94x94/408_5f0c46aec6028.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Dragon</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/puzzle-games/"><a href="https://gameforge.com/en-US/littlegames/puzzle-games/"><img src="images/94x94/3_5eaae422bfc6b.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Puzzle</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/bubble-shooter/"><a href="https://gameforge.com/en-US/littlegames/bubble-shooter/"><img src="images/94x94/14_5ea99f5c1d885.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Bubble Shooter</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/strategy-games/"><a href="https://gameforge.com/en-US/littlegames/strategy-games/"><img src="images/94x94/13_5eabc795dec57.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Strategy</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/sudoku-games/"><a href="https://gameforge.com/en-US/littlegames/sudoku-games/"><img src="images/94x94/126_5eaa919a0d39d.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Sudoku</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/time-management-games/"><a href="https://gameforge.com/en-US/littlegames/time-management-games/"><img src="images/94x94/125_5eb017f5142bf.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Time Management</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/tower-defence-games/"><a href="https://gameforge.com/en-US/littlegames/tower-defence-games/"><img src="images/94x94/118_5ebbb2fa97583.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">Tower Defence</span></a></li>
+                                                    <li data-url="https://gameforge.com/en-US/littlegames/2048-games/"><a href="https://gameforge.com/en-US/littlegames/2048-games/"><img src="images/94x94/1079_5ec3bace2677b.jpg" loading="lazy" style="border-radius: 10px;"><span class="text">2048</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </main>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer navbar-light" role="contentinfo">
+            <div class="footer-content">
+                <div class="container row">
+                    <div class="col">
+                        <div class="navbar-padding">
+                            <ul id="menu-footer" class="footer-navbar-nav">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8391 nav-item"><a title="Cookie Policy" href="#" class="nav-link">Cookie Policy</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8387 nav-item"><a title="Privacy Policy" href="#" class="nav-link">Privacy Policy</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8388 nav-item"><a title="Imprint" href="#" class="nav-link">Imprint</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-provider-hint">©2013-2022 Games235. All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script defer src="js/autoptimize.js"></script>
+</body>
+
+</html>
